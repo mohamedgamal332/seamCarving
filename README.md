@@ -37,6 +37,9 @@ This repository contains implementations of the Seam Carving algorithm for image
 - Focuses solely on using GPU for the dynamic programming part of seam carving.
 - Compares performance gains of GPU-based DP over CPU-based DP.
 - Suitable for benchmarking and performance analysis.
+-  **Runtime Performance**:  
+  - **Low-dimension image**: 8 min 2 sec (2-core parallel DP)  
+  - **High-dimension image**: 12 min 3 sec (2-core parallel DP) 
 
 ### 4. `parallel using multi thread cpu.ipynb`
 **(Parallel Seam Carving Using Multi-Threaded CPU Processing)**
@@ -45,13 +48,8 @@ This repository contains implementations of the Seam Carving algorithm for image
 - Provides performance analysis comparing single-threaded vs. multi-threaded execution.
 - Useful for systems without a GPU but with multi-core processors.
 - **Runtime Performance**:  
-  - **Low-dimension image**: 15 min 12 sec (2-core parallel DP)  
-  - **High-dimension image**: 12 min 3 sec (2-core parallel DP)  
-
-### 5. `sheep-on-a-meadow.jpg`
-**(Sample Image for Testing)**
-- Example image used to test the seam carving implementations.
-- Can be replaced with any image to observe resizing effects.
+  - **Low-dimension image**: 12 min 12 sec (2-core parallel DP)  
+  - **High-dimension image**: 20 min 3 sec (2-core parallel DP)  
 
 ## Usage Instructions
 1. Run the `seq_seamCarving.py` script for basic sequential seam carving.
