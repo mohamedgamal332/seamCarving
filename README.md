@@ -15,9 +15,12 @@ This repository contains implementations of the Seam Carving algorithm for image
   ```sh
   python seq_seamCarving.py <image_path> <scale>
   ```
-- Outputs:
-  - `output.jpg` (resized image)
-  - `seam_highlighted.jpg` (image with highlighted removed seams)
+- **Runtime Performance**:  
+  - **Low-dimension image (280 × 390 × 3)**: 33 min 20 sec  
+  - **High-dimension image (349 × 1182 × 3)**: Over 30 min (did not finish)  
+- Outputs:  
+  - `output.jpg` (resized image)  
+  - `seam_highlighted.jpg` (image with highlighted removed seams)  
 
 ### 2. `gpu_seamCarving.ipynb`
 **(GPU-Accelerated Seam Carving using CUDA)**
@@ -25,6 +28,9 @@ This repository contains implementations of the Seam Carving algorithm for image
 - Offloads energy computation and seam removal to the GPU.
 - Designed to run on systems with CUDA-enabled GPUs.
 - Provides a Jupyter Notebook interface for interactive testing.
+- **Runtime Performance**:  
+  - **Low-dimension image**: 20 sec  
+  - **High-dimension image**: 1 min 30 sec  
 
 ### 3. `GPU_only_DP.ipynb`
 **(GPU-Only Dynamic Programming for Seam Carving)**
@@ -38,6 +44,9 @@ This repository contains implementations of the Seam Carving algorithm for image
 - Optimizes energy calculation and seam removal using CPU threads.
 - Provides performance analysis comparing single-threaded vs. multi-threaded execution.
 - Useful for systems without a GPU but with multi-core processors.
+- **Runtime Performance**:  
+  - **Low-dimension image**: 15 min 12 sec (2-core parallel DP)  
+  - **High-dimension image**: 12 min 3 sec (2-core parallel DP)  
 
 ### 5. `sheep-on-a-meadow.jpg`
 **(Sample Image for Testing)**
@@ -57,5 +66,4 @@ This repository contains implementations of the Seam Carving algorithm for image
 - Experiment with different energy functions for improved results.
 
 ---
-Feel free to contribute or report any issues!
-
+Feel free to contribute or report any issues! 🚀
